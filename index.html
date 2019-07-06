@@ -14,8 +14,17 @@
     <title>Harry Potter Trivia Game</title>
 </head>
 <body>
+    <audio class="my-audio" controls preload="none">
+        <source src="assets/images/HP.mp3" type="audio/mpeg">
+    </audio>
     <div class="container">
         <div class="jumbotron">
+            <div class="row">
+                <div class="col-12">
+                    <img class="banner" src="assets/images/hogwarts.jpg" alt="hogwarts">
+                </div>
+            </div>
+            <br>
             <div class="row">
                 <div class="col-12">
                     <h1 class="header">How Well Do You Know Harry Potter?</h1>
@@ -27,9 +36,9 @@
                 </div>
             </div>
             <form id = "quiz" name = "quiz">    
-            <div class="row hide">
+            <div class="row hide fixed-timer">
                 <div class="col-12">
-                    <p>Time Remaining: X Seconds</p>
+                    <p>Time Remaining: <span id="time-left">40</span> Seconds</p>
                 </div>
             </div>
 
@@ -133,6 +142,21 @@
                     <p>Correct Answers: <section id="wins"></section></p>
                     <p>Incorrect Answers: <section id="losses"></section></p>
                     <p>Unanswered: <section id="ties"></section></p>
+                </div>
+            </div>
+            <div class="row hide2">
+                <div class="col-12">
+                    <p class="all-correct">Perfect score! Hermione would be proud.</p>
+                    <p class="some-incorrect">You missed the following questions:</p>
+                    <p class="q1a">1. How old was Nicholas Flamel when he decided to destroy the sorcerer's stone? Correct Answer: 665</p>
+                    <p class="q2a">2. What is the name of the Weasley brothers' joke shop? Correct Answer: Weasley's Wizard Wheezes</p>
+                    <p class="q3a">3. What does O.W.L. stand for? Correct Answer: Ordinary Wizarding Levels</p>
+                    <p class="q4a">4. What career describes both of Hermione's parents? Correct Answer: Dentists</p>
+                    <p class="q5a">5. Who originally owned the Sorting Hat? Correct Answer: Godric Gryffindor</p>
+                    <p class="q6a">6. Who is Harry's first kiss? Correct Answer: Cho Chang</p>
+                    <p class="q7a">7. What is the name of Uncle Vernon's company? Correct Answer: Grunnings</p>
+                    <p class="q8a">8. Which character is related to a Veela? Correct Answer: Fleur Delacour</p>
+                    <h3>Final Grade: <section id="grade"></section></h3>
                 </div>
             </div>
     

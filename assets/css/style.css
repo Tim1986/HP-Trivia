@@ -4,6 +4,11 @@ body {
     background-size: cover;
 }
 
+.banner {
+    width: 480px;
+    height: 270px;
+}
+
 h1 {
     font-family: 'Cinzel', serif;
 }
@@ -24,5 +29,9 @@ h1 {
 }
 
 .hide2 {
+    display: none;
+}
+
+.all-correct {
     display: none;
 }
