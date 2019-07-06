@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Harry Potter Trivia Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="header">How Well Do You Know Harry Potter?</h1>
+                </div>
+            </div>
+            <div class="row hide1">
+                <div class="col-12">
+                    <button class="start">Start</button>
+                </div>
+            </div>
+            <form id = "quiz" name = "quiz">    
+            <div class="row hide">
+                <div class="col-12">
+                    <p>Time Remaining: X Seconds</p>
+                </div>
+            </div>
+
+            <div class="row hide">
+                <div class="col-12">
+                    <p>1. How old was Nicholas Flamel when he decided to destroy the sorcerer's stone?</p>
+                    <input type = "radio" id = "mc" name = "question1" value = "345"> 345<br>
+                    <input type = "radio" id = "mc" name = "question1" value = "665"> 665<br>
+                    <input type = "radio" id = "mc" name = "question1" value = "999"> 999<br>
+                    <input type = "radio" id = "mc" name = "question1" value = "1568"> 1568<br>
+                    <p></p>
+                </div>
+            </div>
+                
+            <div class="row hide">
+                <div class="col-12">
+                    <p>2. What is the name of the Weasley brothers' joke shop?</p>
+                    <input type = "radio" id = "mc" name = "question2" value = "Zonko's Joke Shop"> Zonko's Joke Shop<br>
+                    <input type = "radio" id = "mc" name = "question2" value = "Weasley's Wizard Wheezes"> Weasley's Wizard Wheezes<br>
+                    <input type = "radio" id = "mc" name = "question2" value = "Fred and George's Wonder Emporium"> Fred and George's Wonder Emporium<br>
+                    <input type = "radio" id = "mc" name = "question2" value = "Weasley's Weasely Whooshes"> Weasley's Weasely Whooshes<br>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row hide">
+                <div class="col-12">
+                    <p>3. What does O.W.L. stand for?</p>
+                    <input type = "radio" id = "mc" name = "question3" value = "Ordinary Wizarding Level"> Ordinary Wizarding Level<br>
+                    <input type = "radio" id = "mc" name = "question3" value = "Outstanding Wizarding Level"> Outstanding Wizarding Level<br>
+                    <input type = "radio" id = "mc" name = "question3" value = "Ordinary Wizardly Level"> Ordinary Wizardly Level<br>
+                    <input type = "radio" id = "mc" name = "question3" value = "Optional Wizarding Ledger"> Optional Wizarding Ledger<br>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row hide">
+                <div class="col-12">
+                    <p>4. What career describes both of Hermione's parents?</p>
+                    <input type = "radio" id = "mc" name = "question4" value = "Librarians"> Librarians<br>
+                    <input type = "radio" id = "mc" name = "question4" value = "Teachers"> Teachers<br>
+                    <input type = "radio" id = "mc" name = "question4" value = "Dentists"> Dentists<br>
+                    <input type = "radio" id = "mc" name = "question4" value = "Bankers"> Bankers<br>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row hide">
+                <div class="col-12">
+                    <p>5. Who originally owned the Sorting Hat?</p>
+                    <input type = "radio" id = "mc" name = "question5" value = "Godric Gryffindor"> Godric Gryffindor<br>
+                    <input type = "radio" id = "mc" name = "question5" value = "Helga Hufflepuff"> Helga Hufflepuff<br>
+                    <input type = "radio" id = "mc" name = "question5" value = "Rowena Ravenclaw"> Rowena Ravenclaw<br>
+                    <input type = "radio" id = "mc" name = "question5" value = "Salazar Slytherin"> Salazar Slytherin<br>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row hide">
+                <div class="col-12">
+                    <p>6. Who is Harry's first kiss?</p>
+                    <input type = "radio" id = "mc" name = "question6" value = "Luna Lovegood"> Luna Lovegood<br>
+                    <input type = "radio" id = "mc" name = "question6" value = "Ginny Weasley"> Ginny Weasley<br>
+                    <input type = "radio" id = "mc" name = "question6" value = "Hermione Granger"> Hermione Granger<br>
+                    <input type = "radio" id = "mc" name = "question6" value = "Cho Chang"> Cho Chang<br>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row hide">
+                <div class="col-12">
+                    <p>7. What is the name of Uncle Vernon's company?</p>
+                    <input type = "radio" id = "mc" name = "question7" value = "Smeltings"> Smeltings<br>
+                    <input type = "radio" id = "mc" name = "question7" value = "Grunnings"> Grunnings<br>
+                    <input type = "radio" id = "mc" name = "question7" value = "Bert's Hardware"> Bert's Hardware<br>
+                    <input type = "radio" id = "mc" name = "question7" value = "Everyday Drills"> Everyday Drills<br>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row hide">
+                <div class="col-12">
+                    <p>8. Which character is related to a Veela?</p>
+                    <input type = "radio" id = "mc" name = "question8" value = "Luna Lovegood"> Luna Lovegood<br>
+                    <input type = "radio" id = "mc" name = "question8" value = "Nymphadora Tonks"> Nymphadora Tonks<br>
+                    <input type = "radio" id = "mc" name = "question8" value = "Cho Chang"> Cho Chang<br>
+                    <input type = "radio" id = "mc" name = "question8" value = "Fleur Delacour"> Fleur Delacour<br>
+                    <p></p>
+                </div>
+            </div>
+        </form>
+
+            <div class="row hide">
+                <div-col-12>
+                    <button class="done">Done</button>
+                </div-col-12>
+            </div>
+            <div class="row hide2">
+                <div class="col-12">
+                    <p>All Done!</p>
+                    <p>Correct Answers: <section id="wins"></section></p>
+                    <p>Incorrect Answers: <section id="losses"></section></p>
+                    <p>Unanswered: <section id="ties"></section></p>
+                </div>
+            </div>
+    
+</div>
+</div>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

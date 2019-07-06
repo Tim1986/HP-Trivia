@@ -1,0 +1,28 @@
+body {
+    background-image: url("../images/memphis-mini-dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+.jumbotron {
+    background: cyan;
+    background-color: cyan;
+    margin-top: 2%;
+}
+
+.start {
+    width: 50%;
+    height: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+.hide2 {
+    display: none;
+}
